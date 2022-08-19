@@ -1,7 +1,4 @@
-<p>edit works!</p>
-
-<ul>
-    <li *ngFor="let prop of edit | keyvalue">
-        {{prop.key}}
-    </li>
-</ul>
+<ng-container *ngFor="let item of edit.conf | keyvalue">
+    <type-text [data]="item.value" [id]="item.key"></type-text>
+    <br />
+</ng-container>

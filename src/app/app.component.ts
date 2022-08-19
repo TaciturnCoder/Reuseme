@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import root from '../assets/sample.json'
+import { Cont } from "../types"
+import sample from '../assets/sample.json'
 
 @Component({
     selector: 'app-root',
@@ -10,5 +11,6 @@ import root from '../assets/sample.json'
 export class AppComponent {
     title = 'ngReuseme';
 
-    edit = root;
+    root: Cont = sample;
+    edit: Cont = this.root;
 }

@@ -1,0 +1,4 @@
+<ng-template [ngIf]="data.type == 'text'">
+    <input type="text" size="6" disabled value="{{id}}" />
+    <input type="{{data.type}}" value="{{data.value}}" step="0.25" [(ngModel)]="data.value">
+</ng-template>
