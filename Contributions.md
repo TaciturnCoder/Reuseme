@@ -9,12 +9,13 @@
 [//]: # ( ------------------------------------------------------------------ {c)
 
 # Reuseme
-Reuseme (version:0, patch:0, draft:1)
+Reuseme (version:0, patch:0, draft:2)
 
 ## Contributions
 
 | Version | Patch | Draft | Date | Contributor | Description |
 | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 2 | 19/08/2022 | [Dwij Bavisi][0] | Getting started |
 | 0 | 0 | 1 | 19/08/2022 | [Dwij Bavisi][0] | Create repository, create new angular workspace |
 
 [0]:https://github.com/DwijBavisi

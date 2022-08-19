@@ -9,12 +9,13 @@
 [//]: # ( ------------------------------------------------------------------ {c)
 
 # Reuseme
-Reuseme (version:0, patch:0, draft:1)
+Reuseme (version:0, patch:0, draft:2)
 
 ## Version history
 
 | Version | Patch | Draft | Date | Description |
 | --- | --- | --- | --- | --- |
+| 0 | 0 | 2 | 19/08/2022 | Getting started |
 | 0 | 0 | 1 | 19/08/2022 | Create repository, create new angular workspace |
 
 ## Contributers

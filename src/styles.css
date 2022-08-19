@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'normalize.css';
+
+* {
+    box-sizing: border-box;
+
+    /* Reset Angular injected style */
+    margin-block-start: unset;
+    margin-block-end: unset;
+}

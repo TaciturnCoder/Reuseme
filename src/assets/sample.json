@@ -1,0 +1,237 @@
+{
+    "conf": {
+        "width": {
+            "value": 8.3,
+            "cat": "input",
+            "type": "number",
+            "unit": "inches"
+        },
+        "height": {
+            "value": 11.7,
+            "cat": "input",
+            "type": "number",
+            "unit": "inches"
+        },
+        "margin": {
+            "value": 0.25,
+            "cat": "input",
+            "type": "number",
+            "unit": "inches"
+        },
+        "name": {
+            "value": "Dwij Bavisi",
+            "cat": "input",
+            "type": "text"
+        }
+    },
+    "cont": {
+        "header": {
+            "conf": {},
+            "cont": {},
+            "cat": "header"
+        },
+        "phone": {
+            "conf": {
+                "disp": {
+                    "value": "(+91) 91045 26588",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "link": {
+                    "value": "tel:+919104526588",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "icon": {
+                    "value": "lib/icons/phone.svg",
+                    "cat": "input",
+                    "type": "text"
+                }
+            },
+            "cont": {},
+            "cat": "icon-link"
+        },
+        "email": {
+            "conf": {
+                "disp": {
+                    "value": "dwijbavisi@gmail.com",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "link": {
+                    "value": "mailto:dwijbavisi@gmail.com",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "icon": {
+                    "value": "lib/icons/email.svg",
+                    "cat": "input",
+                    "type": "text"
+                }
+            },
+            "cont": {},
+            "cat": "icon-link"
+        },
+        "github": {
+            "conf": {
+                "disp": {
+                    "value": "/TaciturnCoder",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "link": {
+                    "value": "https://github.com/TaciturnCoder",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "icon": {
+                    "value": "lib/icons/github.svg",
+                    "cat": "input",
+                    "type": "text"
+                }
+            },
+            "cont": {},
+            "cat": "icon-link"
+        },
+        "linkedin": {
+            "conf": {
+                "disp": {
+                    "value": "/in/dwij-bavisi-60aba01b0/",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "link": {
+                    "value": "https://www.linkedin.com/in/dwij-bavisi-60aba01b0/",
+                    "cat": "input",
+                    "type": "text"
+                },
+                "icon": {
+                    "value": "lib/icons/linkedin.svg",
+                    "cat": "input",
+                    "type": "text"
+                }
+            },
+            "cont": {},
+            "cat": "icon-link"
+        },
+        "hr": {
+            "conf": {},
+            "cont": {},
+            "cat": "hr"
+        },
+        "education": {
+            "conf": {},
+            "cont": {
+                "BTech": {
+                    "conf": {
+                        "title": {
+                            "value": "B.Tech. CSE",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "start": {
+                            "value": "Nov 2020",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "end": {
+                            "value": "present",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "institute": {
+                            "value": "Institute of Technology, Nirma University, Ahmedabad",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "SPI": {
+                            "value": "8.77 (4th Sem)",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "PPI": {
+                            "value": "7.77 (till 4th Sem)",
+                            "cat": "input",
+                            "type": "text"
+                        }
+                    },
+                    "marks": [
+                        "SPI",
+                        "PPI"
+                    ]
+                },
+                "SSC": {
+                    "conf": {
+                        "title": {
+                            "value": "SSC (12th Grade)",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "start": {
+                            "value": "March 2020",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "end": {
+                            "value": "",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "institute": {
+                            "value": "Shree Lal Bahadur Shastri Vidyalaya, Vadodara",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "Board Examination": {
+                            "value": "76.92%, 92.02%tile",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "JEE Mains": {
+                            "value": "97.43%tile",
+                            "cat": "input",
+                            "type": "text"
+                        }
+                    },
+                    "marks": [
+                        "Board Examination",
+                        "JEE Mains"
+                    ]
+                },
+                "HSC": {
+                    "conf": {
+                        "title": {
+                            "value": "HSC (10th Grade)",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "start": {
+                            "value": "March 2018",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "end": {
+                            "value": "",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "institute": {
+                            "value": "Rosary High School, Vadodara",
+                            "cat": "input",
+                            "type": "text"
+                        },
+                        "Board Examination": {
+                            "value": "85.83%, 97.83%tile",
+                            "cat": "input",
+                            "type": "text"
+                        }
+                    },
+                    "marks": [
+                        "Board Examination"
+                    ]
+                }
+            },
+            "cat": "education"
+        }
+    }
+}

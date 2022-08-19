@@ -1,0 +1,14 @@
+:host {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    height: 100vh;
+    right: var(--width);
+
+    background-color: var(--primary);
+    color: var(--text-primary);
+    user-select: none;
+
+    padding: 0.3in 0 0 0.3in;
+}

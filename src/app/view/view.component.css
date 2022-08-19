@@ -1,0 +1,16 @@
+:host {
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    top: 0;
+    right: 0;
+    height: var(--height);
+    width: var(--width);
+
+    padding: var(--margin);
+
+    /* background-color: #666666; */
+    cursor: pointer;
+}
