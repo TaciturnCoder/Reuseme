@@ -1,2 +1,18 @@
-<pre>{{root | json}}
-</pre>
+<!-- <pre>{{comp | json}}</pre> -->
+<ng-container *ngIf="comp.conf['hidden']?.value != 'true'">
+    <ng-container [ngSwitch]="comp.cat">
+        <cat-leaf *ngSwitchCase="'Leaf'" [data]="comp"></cat-leaf>
+        <!-- <cat-text [data]="comp"></cat-text> -->
+    </ng-container>
+</ng-container>
+
+<ng-container *ngIf="comp.order != undefined" (click)="edit.set(comp, $event)">
+    <ng-container *ngFor="let item of comp.order">
+        <app-view [comp]="comp.comp[item]" [edit]="edit"></app-view>
+    </ng-container>
+</ng-container>
+<ng-container *ngIf="comp.order == undefined" (click)="edit.set(comp, $event)">
+    <ng-container #elseblock *ngFor="let item of comp.comp | keyvalue: originalOrder">
+        <app-view [comp]="item.value" [edit]="edit"></app-view>
+    </ng-container>
+</ng-container>

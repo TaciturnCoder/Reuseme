@@ -1,0 +1,5 @@
+<ng-template [ngIf]="data.type == 'color'">
+    <input type="text" size="12" disabled value="{{data.name}}" />
+    <input type="color" [(ngModel)]="data.value"> {{data.value | uppercase}}
+    <br />
+</ng-template>

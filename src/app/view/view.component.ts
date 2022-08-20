@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Cont } from 'src/types';
+import { Comp } from 'src/types';
 
 @Component({
     selector: 'app-view',
@@ -7,7 +7,14 @@ import { Cont } from 'src/types';
     styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-    @Input() root!: Cont;
+    @Input() comp!: Comp;
+    @Input() edit!: {
+        root: Comp,
+        set: (r: Comp, $event: any) => void
+    }
+    originalOrder = (a: any, b: any): number => {
+        return 0;
+    }
 
     constructor() { }
 

@@ -1,40 +1,6 @@
 {
-    "cont": {
-        "education": {
-            "cont": {
-                "course": {
-                    "cont": {},
-                    "conf": {
-                        "title": {
-                            "value": "course title",
-                            "type": "text"
-                        },
-                        "institute": {
-                            "value": "university name",
-                            "type": "text"
-                        }
-                    },
-                    "cat": ""
-                }
-            },
-            "conf": {},
-            "cat": "edu"
-        },
-        "projects": {
-            "cont": {},
-            "conf": {},
-            "cat": "pro"
-        }
-    },
-    "conf": {
-        "Name": {
-            "value": "user name",
-            "type": "text"
-        },
-        "Dummy": {
-            "value": "dumm",
-            "type": "dumm"
-        }
-    },
-    "cat": "root"
+    "comp": {},
+    "conf": {},
+    "name": "Root",
+    "cat": "Section"
 }

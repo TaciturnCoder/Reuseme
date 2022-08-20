@@ -1,4 +1,48 @@
-<ng-container *ngFor="let item of edit.conf | keyvalue">
-    <type-text [data]="item.value" [id]="item.key"></type-text>
-    <br />
+<input type="text" size="12" disabled value="Component name" />
+<input type="text" [(ngModel)]="edit.root.name">
+
+<br /><br />
+
+<input type="text" size="12" disabled value="Attribute" />
+<input type="text" disabled value="Value" />
+<br />
+<ng-container *ngFor="let item of edit.root.conf | keyvalue: originalOrder">
+    <ng-container *ngIf="item.value.hidden != true">
+        <ng-container [ngSwitch]="item.value.type">
+            <type-text *ngSwitchCase="'text'" [data]="item.value"></type-text>
+            <type-color *ngSwitchCase="'color'" [data]="item.value"></type-color>
+        </ng-container>
+    </ng-container>
 </ng-container>
+<br /><br />
+
+<input type="text" size="12" disabled value="Component" />
+<input type="text" disabled value="Actions" />
+<br />
+<ng-container *ngIf="edit.root.order != undefined">
+    <ng-container *ngFor="let item of edit.root.order">
+        <input type="text" size="12" disabled value="{{edit.root.comp[item].name}}" />
+        <button (click)="edit.set(edit.root.comp[item], $event)">config</button>
+        <br />
+    </ng-container>
+</ng-container>
+<ng-container *ngIf="edit.root.order == undefined">
+    <ng-container #elseblock *ngFor="let item of edit.root.comp | keyvalue: originalOrder">
+        <input type="text" size="12" disabled value="{{item.value.name}}" />
+        <button (click)="edit.set(item.value, $event)">config</button>
+        <br />
+    </ng-container>
+</ng-container>
+<br /><br />
+
+<input type="text" size="14" disabled value="Component Name" />
+<input type="text" size="18" disabled value="Component Category" />
+<br />
+<input type="text" size="14" [(ngModel)]="adder.name">
+<select name="addComp" [(ngModel)]="adder.cat" style="width: 9rem;">
+    <option *ngFor="let key of flow[edit.root.cat]" value="{{key}}">{{key}}</option>
+</select>
+<button (click)="adder.add(adder.name, adder.cat)">&nbsp;&nbsp;Add&nbsp;&nbsp;&nbsp;</button>
+<br /><br /><br />
+
+<button style="width: 100%;" (click)="debug.toggle()">{{debug.state ? "Disable" : "Enable"}} debugging</button>

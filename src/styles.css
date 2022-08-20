@@ -8,4 +8,22 @@
     /* Reset Angular injected style */
     margin-block-start: unset;
     margin-block-end: unset;
+
+    font-family: 'Merriweather';
+}
+
+app-view.debug,
+app-view.debug * {
+    border: 1px solid black;
+}
+
+@media print {
+    app-edit {
+        display: none;
+    }
+
+    app-view.debug,
+    app-view.debug * {
+        border: initial;
+    }
 }

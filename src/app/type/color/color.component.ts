@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Conf } from "../../../types"
 
 @Component({
-    selector: 'type-text',
-    templateUrl: './text.component.html',
-    styleUrls: ['./text.component.css']
+    selector: 'type-color',
+    templateUrl: './color.component.html',
+    styleUrls: ['./color.component.css']
 })
-export class TextComponent implements OnInit {
+export class ColorComponent implements OnInit {
     @Input() data!: Conf;
 
     constructor() { }

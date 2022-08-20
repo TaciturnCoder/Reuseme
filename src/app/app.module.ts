@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { EditComponent } from './edit/edit.component';
 import { ViewComponent } from './view/view.component';
 import { TextComponent } from './type/text/text.component';
+import { ColorComponent } from './type/color/color.component';
+import { LeafComponent } from './cat/leaf/leaf.component';
+import { ChipsComponent } from './cat/chips/chips.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         EditComponent,
         ViewComponent,
-        TextComponent
+        TextComponent,
+        ColorComponent,
+        LeafComponent,
+        ChipsComponent,
     ],
     imports: [
         BrowserModule,

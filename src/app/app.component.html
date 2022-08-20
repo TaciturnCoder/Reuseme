@@ -1,2 +1,2 @@
-<app-edit [edit]="edit"></app-edit>
-<app-view [root]="root"></app-view>
+<app-edit [edit]="edit" [debug]="debug"></app-edit>
+<app-view [comp]="root" [edit]="edit" [class.debug]="debug.state" (click)="edit.set(root, $event)"></app-view>

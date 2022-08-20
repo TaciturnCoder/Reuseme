@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
-import { Cont } from "../types"
+import { Comp } from "../types"
 import sample from '../assets/sample.json'
 
 @Component({
@@ -11,6 +11,23 @@ import sample from '../assets/sample.json'
 export class AppComponent {
     title = 'ngReuseme';
 
-    root: Cont = sample;
-    edit: Cont = this.root;
+    root: Comp = sample;
+    edit = {
+        root: <Comp>this.root,
+        set: function (r: Comp, $event: any) {
+            $event.stopPropagation();
+            this.root = r;
+        }
+    }
+
+    @HostBinding("style.--primary") get primary() {
+        return this.root.conf["primary"]?.value;
+    }
+
+    debug = {
+        state: false,
+        toggle: function () {
+            this.state = !this.state;
+        }
+    }
 }
